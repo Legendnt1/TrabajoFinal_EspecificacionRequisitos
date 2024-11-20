@@ -1,18 +1,16 @@
-﻿Feature: Acceso a Tutoriales y Guías
-  Como usuario
-  Quiero acceder a tutoriales y guías que me enseñen a utilizar las funciones de la plataforma
-  Para maximizar mi experiencia.
+﻿Feature: Access to Tutorials and Guides
+	As a user
+	I want to access tutorials and guides that teach me how to use the platform's features
+	So that I can maximize my experience.
 
-  @BusquedaDeTutoriales
-  Scenario: Los tutoriales y guías deben estar organizados por temas y ser fáciles de buscar
-    Given que el usuario está en la sección de tutoriales
-    When busque un tema específico
-    And utilice la función de búsqueda
-    Then debe encontrar resultados relevantes que se ajusten a mi búsqueda
+@SearchForTutorials Scenario: Tutorials and guides should be organized by topic and easy to search
+	Given that the user is in the tutorials section
+	When they search for a specific topic
+	And use the search function
+	Then they should find relevant results that match their search
 
-  @VisualizacionDeTutoriales
-  Scenario: Cada tutorial debe incluir un video o una serie de imágenes que ilustren los pasos a seguir
-    Given que el usuario ha seleccionado un tutorial
-    When lo visualice
-    And siga las instrucciones
-    Then debe ser capaz de completar el proceso descrito sin confusiones
+@ViewingTutorials Scenario: Each tutorial should include a video or a series of images illustrating the steps to follow
+	Given that the user has selected a tutorial
+	When they view it
+	And follow the instructions
+	Then they should be able to complete the described process without confusion
